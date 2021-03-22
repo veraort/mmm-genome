@@ -1,1 +1,8 @@
-A small script adding informations to a genbank file.
+Background / Use Case: You re-sequenced a genome from scratch because you genome sequence was done using a really old sequencing techniques, e.g. pyrosequencing, and you are scared, that you might oversee rearragements.
+Therefore, you choose a oxford-nanopore sequencing approach coupled to illumina data and performed a de novo assembly and annotation using a standard annotation pipeline (e.g. prokka).
+Now, you have two genomes with a really acurate manual annotation (old) and a better sequence but a creepy annotation (new).
+
+What you want: Having all annotations in one file with the correct and better genome sequence.
+
+Solution: Creating a csv file with old and new locus tags by comparison of a limited amount of amino acids of each CDS and adding all informations of the old "better annotation".
+Write all "new locus tags" and "informations" in the genbank file - machine readable. 
