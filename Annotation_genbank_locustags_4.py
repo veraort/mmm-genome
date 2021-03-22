@@ -12,13 +12,14 @@ import pandas
  
 # open csv with pandas and write in dictionary
 df = pandas.read_csv("/Users/veraortseifen/Documents/PostDoc/2020-/Xanthomonas/csv_vorlage_new.csv",sep=";")
+% insert csv file contain old and new locus tags and informations you want to add
 
 
 #Create a list for genbank
 f=open("/Users/veraortseifen/Documents/PostDoc/2020-/Xanthomonas/W15_neu.gb")
 lines=f.readlines()
 f.close
-
+% insert genbank file of the genome you want to extend with more informations
             
 #If the key from lines is in the annotationfile add the description and the name to its value behind locus tags ; especially add old locus tag and description
 file=open("W15_neu_extended.gb","w") #neue Datei erstellen und direkt reinschreiben
